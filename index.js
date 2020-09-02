@@ -29,7 +29,7 @@ const httpServer = http.createServer((req, res) => {
     req.on('end', () => {
         buffer += decoder.end();
 
-        const parsedPayload = JSON.parse(buffer);
+        const parsedPayload = buffer ? JSON.parse(buffer) : {};
 
         const data = {
             trimedPath: trimedPath,
@@ -66,7 +66,9 @@ httpServer.listen(8080, () => {
 
 const router = {
     ping : routeHandler.ping,
-    books : routeHandler.Books,
+    books: routeHandler.Books,
+    register: routeHandler.register,
+    return_book: routeHandler.return_book,
     notfound : routeHandler.notfound
 }
 

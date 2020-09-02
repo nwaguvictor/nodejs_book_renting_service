@@ -1,0 +1,16 @@
+{
+	"name": "nodejs_learnable_crashcource",
+	"version": "1.0.0",
+	"description": "End points:\r     -- ping - home\r     -- register(with post method) - register a user by providing user details\r     -- return_book(with post method) - return borrowed book\r     -- books(with get method) - get a book by providing user details and book title\r     -- books(with post method) - only for admin, provide admin details and the book info to add\r     -- books(with put method) - only for admin, provide admin details and the book info to update\r     -- books(with delete method) - only for admin, provide admin details and the book name to delete",
+	"main": "index.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {},
+	"keywords": [],
+	"author": "victor",
+	"license": "ISC"
+}
